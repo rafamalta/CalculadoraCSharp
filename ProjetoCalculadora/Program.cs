@@ -4,6 +4,11 @@
     {
         static void Main(string[] args)
         {
+            Soma();
+        }
+
+        static void Soma()
+        {
             Console.Clear();
 
             Console.Write("Primeiro valor: ");
