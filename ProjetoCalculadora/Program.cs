@@ -4,12 +4,26 @@
     {
         static void Main(string[] args)
         {
-            //Divisao();
-            Multiplicacao();
-            //Subtracao();
-            //Soma();
+            Menu();
         }
 
+        static void Menu()
+        {
+            Console.Clear();
+            
+            Console.WriteLine("O que deseja fazer?");
+            Console.WriteLine("1 - Soma");
+            Console.WriteLine("2 - Subtração");
+            Console.WriteLine("3 - Divisão");
+            Console.WriteLine("4 - Mulplicação");
+
+            Console.WriteLine("--------------");
+
+            short opcao = short.Parse(Console.ReadLine());
+
+            Console.ReadKey();
+        }
+        
         static void Soma()
         {
             Console.Clear();
