@@ -19,7 +19,18 @@
 
             Console.WriteLine("--------------");
 
+            Console.Write("Selecione uma opção: ");
+
             short opcao = short.Parse(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1: Soma(); break;
+                case 2: Subtracao(); break;
+                case 3: Divisao(); break;
+                case 4: Multiplicacao(); break;
+                default: Menu(); break;
+            }
 
             Console.ReadKey();
         }
@@ -38,6 +49,7 @@
             Console.WriteLine($"O resultado da soma é {v1 + v2}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Subtracao()
@@ -54,6 +66,7 @@
             Console.WriteLine($"O resultado da subtração é {v1 - v2}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Divisao()
@@ -70,6 +83,7 @@
             Console.WriteLine($"O resultado da divisão é {v1 / v2}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Multiplicacao()
@@ -86,6 +100,7 @@
             Console.WriteLine($"O resultado da multiplicação é {v1 * v2}");
 
             Console.ReadKey();
+            Menu();
         }
     }
 }
